@@ -1,0 +1,81 @@
+PR_ID,Requester,Department,Category,Amount_AED,Supplier_Selected,Vendor_ID,Business_Justification,Budget_Code,Required_By_Date,Approval_Level,Quotes_Attached_Count,Status,Missing_Info_Flag,Notes
+PR-2026-0001,Dina Fathy,Procurement,Software,16849,Future Hardware Co.,VEN-1403,Needed to replace outdated equipment.,,2026-05-23,Manager,0,In Review,Yes,Missing budget code
+PR-2026-0002,Salma Nabil,Operations,Hardware,29062,Nile Office Supplies,VEN-3018,Supports operational efficiency improvement.,BUD-OP-659,2026-04-02,Department Head,3,Submitted,No,
+PR-2026-0003,Dina Fathy,HR,Hardware,305544,Future Hardware Co.,VEN-5751,Needed to replace outdated equipment.,BUD-HR-659,2026-03-15,Procurement Committee,3,Draft,No,
+PR-2026-0004,Mariam Adel,Operations,Cloud Services,60986,ABC Technology Trading LLC,VEN-5643,Required for compliance and service continuity.,BUD-OP-933,2026-04-05,Department Head,2,Draft,Yes,Insufficient quotations
+PR-2026-0005,Salma Nabil,Marketing,Cloud Services,179176,Future Hardware Co.,VEN-8509,Needed to replace outdated equipment.,BUD-MA-463,2026-03-13,Procurement Committee,3,Draft,No,
+PR-2026-0006,Salma Nabil,HR,Consulting,314680,,,Required to support approved project delivery.,BUD-HR-625,2026-02-25,Procurement Committee,2,Returned,Yes,Insufficient quotations; Preferred vendor not provided
+PR-2026-0007,Dina Fathy,Finance,Maintenance,17462,,,Required to support approved project delivery.,BUD-FI-503,2026-03-26,Manager,1,Approved,Yes,Preferred vendor not provided
+PR-2026-0008,Omar Samir,Marketing,Office Supplies,278582,Delta Cloud Services,VEN-7615,,BUD-MA-431,2026-02-14,Procurement Committee,4,Draft,Yes,Missing business justification
+PR-2026-0009,Mariam Adel,IT,Training,161767,,,Needed to replace outdated equipment.,BUD-IT-878,2026-06-01,Procurement Committee,2,Submitted,Yes,Insufficient quotations; Preferred vendor not provided
+PR-2026-0010,Omar Samir,IT,Office Supplies,18835,Delta Cloud Services,VEN-1482,Required to support approved project delivery.,,2026-02-28,Manager,1,Returned,Yes,Missing budget code
+PR-2026-0011,Karim Hassan,Procurement,Office Supplies,137638,Nile Office Supplies,VEN-4296,Required for compliance and service continuity.,BUD-PR-602,2026-05-11,Procurement Committee,3,Submitted,No,
+PR-2026-0012,Karim Hassan,Procurement,Software,13247,,,Needed to replace outdated equipment.,BUD-PR-198,2026-05-31,Manager,0,Draft,Yes,Preferred vendor not provided
+PR-2026-0013,Karim Hassan,Finance,Hardware,11831,,,,BUD-FI-845,2026-05-23,Manager,1,Submitted,Yes,Missing business justification; Preferred vendor not provided
+PR-2026-0014,Mariam Adel,Procurement,Maintenance,191265,Nile Office Supplies,VEN-2280,Required for compliance and service continuity.,BUD-PR-549,2026-02-22,Procurement Committee,3,In Review,No,
+PR-2026-0015,Salma Nabil,Procurement,Consulting,161490,ABC Technology Trading LLC,VEN-6863,Supports operational efficiency improvement.,BUD-PR-396,2026-02-14,Procurement Committee,3,Submitted,No,
+PR-2026-0016,Youssef Ali,Procurement,Office Supplies,245962,Delta Cloud Services,VEN-8716,,BUD-PR-158,2026-03-11,Procurement Committee,1,Draft,Yes,Missing business justification; Insufficient quotations
+PR-2026-0017,Dina Fathy,HR,Hardware,5613,Future Hardware Co.,VEN-2194,Required to support approved project delivery.,BUD-HR-437,2026-05-20,Manager,0,In Review,No,
+PR-2026-0018,Dina Fathy,Finance,Software,22182,Mena Consulting Group,VEN-3121,Required to support approved project delivery.,BUD-FI-727,2026-03-12,Manager,1,Draft,No,
+PR-2026-0019,Mariam Adel,Operations,Training,61251,Delta Cloud Services,VEN-1431,Needed to replace outdated equipment.,BUD-OP-997,2026-05-16,Department Head,1,Submitted,Yes,Insufficient quotations
+PR-2026-0020,Dina Fathy,IT,Office Supplies,272075,Mena Consulting Group,VEN-7993,Required for compliance and service continuity.,,2026-04-17,Procurement Committee,2,Submitted,Yes,Missing budget code; Insufficient quotations
+PR-2026-0021,Mariam Adel,Finance,Hardware,33613,Delta Cloud Services,VEN-1164,Needed to replace outdated equipment.,BUD-FI-159,2026-03-07,Department Head,2,Approved,Yes,Insufficient quotations
+PR-2026-0022,Mariam Adel,IT,Maintenance,299329,ABC Technology Trading LLC,VEN-3076,Required to support approved project delivery.,BUD-IT-355,2026-04-03,Procurement Committee,1,Submitted,Yes,Insufficient quotations
+PR-2026-0023,Mariam Adel,Finance,Hardware,10369,Future Hardware Co.,VEN-2251,Required to support approved project delivery.,BUD-FI-773,2026-03-10,Manager,1,In Review,No,
+PR-2026-0024,Salma Nabil,Operations,Cloud Services,8911,Delta Cloud Services,VEN-5001,,BUD-OP-898,2026-04-14,Manager,1,Returned,Yes,Missing business justification
+PR-2026-0025,Youssef Ali,Operations,Cloud Services,64523,Future Hardware Co.,VEN-4777,Needed to replace outdated equipment.,BUD-OP-180,2026-03-17,Department Head,2,In Review,Yes,Insufficient quotations
+PR-2026-0026,Mariam Adel,IT,Hardware,9004,,,Required for compliance and service continuity.,BUD-IT-882,2026-04-10,Manager,0,Draft,Yes,Preferred vendor not provided
+PR-2026-0027,Dina Fathy,IT,Consulting,10135,Future Hardware Co.,VEN-1727,Required for compliance and service continuity.,BUD-IT-119,2026-03-06,Manager,1,Submitted,No,
+PR-2026-0028,Omar Samir,Finance,Software,235460,Future Hardware Co.,VEN-4547,,BUD-FI-126,2026-05-13,Procurement Committee,3,Draft,Yes,Missing business justification
+PR-2026-0029,Youssef Ali,Marketing,Cloud Services,85534,ABC Technology Trading LLC,VEN-8594,Required for compliance and service continuity.,BUD-MA-666,2026-04-01,Department Head,3,In Review,No,
+PR-2026-0030,Mariam Adel,Operations,Cloud Services,81137,Nile Office Supplies,VEN-5094,Supports operational efficiency improvement.,BUD-OP-115,2026-05-15,Department Head,3,In Review,No,
+PR-2026-0031,Mariam Adel,Finance,Consulting,66689,,,,BUD-FI-768,2026-03-17,Department Head,1,In Review,Yes,Missing business justification; Insufficient quotations; Preferred vendor not provided
+PR-2026-0032,Dina Fathy,Operations,Software,86027,Mena Consulting Group,VEN-4569,Required to support approved project delivery.,,2026-03-30,Department Head,3,Draft,Yes,Missing budget code
+PR-2026-0033,Dina Fathy,Finance,Software,324775,Mena Consulting Group,VEN-3084,Supports operational efficiency improvement.,BUD-FI-884,2026-03-07,Procurement Committee,3,Submitted,No,
+PR-2026-0034,Omar Samir,Marketing,Software,7791,Nile Office Supplies,VEN-1687,Required for compliance and service continuity.,BUD-MA-981,2026-04-17,Manager,1,Submitted,No,
+PR-2026-0035,Omar Samir,IT,Cloud Services,77162,Delta Cloud Services,VEN-2788,,BUD-IT-145,2026-02-15,Department Head,2,In Review,Yes,Missing business justification; Insufficient quotations
+PR-2026-0036,Karim Hassan,Procurement,Consulting,62305,,,Required for compliance and service continuity.,BUD-PR-757,2026-02-09,Department Head,3,Returned,Yes,Preferred vendor not provided
+PR-2026-0037,Omar Samir,Finance,Training,343899,Delta Cloud Services,VEN-3458,Supports operational efficiency improvement.,BUD-FI-264,2026-04-22,Procurement Committee,1,Draft,Yes,Insufficient quotations
+PR-2026-0038,Mariam Adel,Marketing,Office Supplies,181710,Future Hardware Co.,VEN-3458,Required for compliance and service continuity.,BUD-MA-320,2026-03-26,Procurement Committee,4,Draft,No,
+PR-2026-0039,Youssef Ali,Procurement,Office Supplies,348118,,,,BUD-PR-528,2026-05-19,Procurement Committee,1,Draft,Yes,Missing business justification; Insufficient quotations; Preferred vendor not provided
+PR-2026-0040,Omar Samir,Finance,Hardware,73121,Future Hardware Co.,VEN-4782,Supports operational efficiency improvement.,BUD-FI-349,2026-04-05,Department Head,2,Returned,Yes,Insufficient quotations
+PR-2026-0041,Salma Nabil,Operations,Consulting,164056,ABC Technology Trading LLC,VEN-8932,Required to support approved project delivery.,BUD-OP-617,2026-04-24,Procurement Committee,3,Submitted,No,
+PR-2026-0042,Omar Samir,Procurement,Hardware,13530,Mena Consulting Group,VEN-5700,Needed to replace outdated equipment.,BUD-PR-781,2026-03-21,Manager,1,Returned,No,
+PR-2026-0043,Mariam Adel,Procurement,Training,7241,,,Needed to replace outdated equipment.,BUD-PR-302,2026-02-27,Manager,1,Draft,Yes,Preferred vendor not provided
+PR-2026-0044,Salma Nabil,Marketing,Software,80882,Nile Office Supplies,VEN-3735,Required for compliance and service continuity.,BUD-MA-953,2026-02-15,Department Head,1,Submitted,Yes,Insufficient quotations
+PR-2026-0045,Omar Samir,Finance,Hardware,63639,Mena Consulting Group,VEN-6515,Supports operational efficiency improvement.,BUD-FI-347,2026-04-22,Department Head,1,In Review,Yes,Insufficient quotations
+PR-2026-0046,Dina Fathy,Finance,Training,116083,Mena Consulting Group,VEN-3205,Required for compliance and service continuity.,BUD-FI-858,2026-05-10,Procurement Committee,3,Submitted,No,
+PR-2026-0047,Omar Samir,IT,Hardware,305925,ABC Technology Trading LLC,VEN-8185,Required for compliance and service continuity.,BUD-IT-478,2026-02-28,Procurement Committee,3,In Review,No,
+PR-2026-0048,Youssef Ali,Finance,Training,18728,Delta Cloud Services,VEN-9326,,,2026-05-25,Manager,1,Approved,Yes,Missing budget code; Missing business justification
+PR-2026-0049,Youssef Ali,IT,Maintenance,10419,,,Needed to replace outdated equipment.,BUD-IT-848,2026-03-13,Manager,1,In Review,Yes,Preferred vendor not provided
+PR-2026-0050,Omar Samir,IT,Consulting,21712,Delta Cloud Services,VEN-2738,Needed to replace outdated equipment.,BUD-IT-329,2026-03-07,Manager,1,Returned,No,
+PR-2026-0051,Mariam Adel,IT,Office Supplies,7679,ABC Technology Trading LLC,VEN-9001,,BUD-IT-652,2026-05-23,Manager,0,Draft,Yes,Missing business justification
+PR-2026-0052,Salma Nabil,Marketing,Training,45574,Future Hardware Co.,VEN-2965,Supports operational efficiency improvement.,BUD-MA-564,2026-04-03,Department Head,1,Approved,Yes,Insufficient quotations
+PR-2026-0053,Salma Nabil,Marketing,Cloud Services,31341,ABC Technology Trading LLC,VEN-2218,Required to support approved project delivery.,BUD-MA-922,2026-03-19,Department Head,2,Submitted,Yes,Insufficient quotations
+PR-2026-0054,Mariam Adel,Marketing,Maintenance,259502,ABC Technology Trading LLC,VEN-9540,Required to support approved project delivery.,BUD-MA-422,2026-03-18,Procurement Committee,3,Submitted,No,
+PR-2026-0055,Salma Nabil,Marketing,Cloud Services,20987,ABC Technology Trading LLC,VEN-4205,Required for compliance and service continuity.,BUD-MA-700,2026-03-11,Manager,0,Approved,No,
+PR-2026-0056,Dina Fathy,HR,Hardware,84412,,,Needed to replace outdated equipment.,BUD-HR-628,2026-02-14,Department Head,1,Approved,Yes,Insufficient quotations; Preferred vendor not provided
+PR-2026-0057,Dina Fathy,Marketing,Consulting,40223,Future Hardware Co.,VEN-9691,Needed to replace outdated equipment.,BUD-MA-697,2026-05-01,Department Head,3,Submitted,No,
+PR-2026-0058,Omar Samir,Operations,Training,319384,,,,BUD-OP-465,2026-02-18,Procurement Committee,3,Submitted,Yes,Missing business justification; Preferred vendor not provided
+PR-2026-0059,Dina Fathy,Operations,Training,89305,Delta Cloud Services,VEN-6224,Required to support approved project delivery.,BUD-OP-535,2026-05-01,Department Head,2,Draft,Yes,Insufficient quotations
+PR-2026-0060,Youssef Ali,Operations,Office Supplies,54060,Mena Consulting Group,VEN-4524,Supports operational efficiency improvement.,BUD-OP-129,2026-05-30,Department Head,3,Approved,No,
+PR-2026-0061,Dina Fathy,Operations,Training,81341,Mena Consulting Group,VEN-4587,Required to support approved project delivery.,BUD-OP-366,2026-03-21,Department Head,3,Draft,No,
+PR-2026-0062,Omar Samir,Procurement,Hardware,10861,,,,,2026-02-22,Manager,1,In Review,Yes,Missing budget code; Missing business justification; Preferred vendor not provided
+PR-2026-0063,Salma Nabil,IT,Maintenance,94370,,,,BUD-IT-461,2026-02-12,Department Head,1,In Review,Yes,Missing business justification; Insufficient quotations; Preferred vendor not provided
+PR-2026-0064,Omar Samir,Operations,Maintenance,346378,,,Needed to replace outdated equipment.,BUD-OP-920,2026-03-30,Procurement Committee,3,Submitted,Yes,Preferred vendor not provided
+PR-2026-0065,Omar Samir,Procurement,Software,15506,Future Hardware Co.,VEN-5939,Required to support approved project delivery.,BUD-PR-596,2026-02-09,Manager,0,Submitted,No,
+PR-2026-0066,Mariam Adel,IT,Maintenance,113275,Mena Consulting Group,VEN-2210,Supports operational efficiency improvement.,BUD-IT-234,2026-04-11,Procurement Committee,1,Approved,Yes,Insufficient quotations
+PR-2026-0067,Omar Samir,IT,Cloud Services,5382,Future Hardware Co.,VEN-7965,,BUD-IT-298,2026-04-12,Manager,1,Draft,Yes,Missing business justification
+PR-2026-0068,Youssef Ali,Procurement,Training,129421,Mena Consulting Group,VEN-5563,Needed to replace outdated equipment.,BUD-PR-195,2026-04-08,Procurement Committee,3,Returned,No,
+PR-2026-0069,Mariam Adel,Operations,Cloud Services,22245,Mena Consulting Group,VEN-8409,,BUD-OP-881,2026-03-06,Manager,1,In Review,Yes,Missing business justification
+PR-2026-0070,Mariam Adel,Operations,Office Supplies,54006,ABC Technology Trading LLC,VEN-3773,Needed to replace outdated equipment.,BUD-OP-440,2026-03-04,Department Head,1,Approved,Yes,Insufficient quotations
+PR-2026-0071,Dina Fathy,Procurement,Cloud Services,31123,Future Hardware Co.,VEN-6102,Required for compliance and service continuity.,BUD-PR-160,2026-05-11,Department Head,3,Returned,No,
+PR-2026-0072,Youssef Ali,Operations,Maintenance,273804,ABC Technology Trading LLC,VEN-9188,,BUD-OP-314,2026-03-18,Procurement Committee,3,Submitted,Yes,Missing business justification
+PR-2026-0073,Mariam Adel,Marketing,Software,231035,ABC Technology Trading LLC,VEN-3655,Required for compliance and service continuity.,BUD-MA-179,2026-04-13,Procurement Committee,2,Draft,Yes,Insufficient quotations
+PR-2026-0074,Salma Nabil,Operations,Training,8157,Nile Office Supplies,VEN-9963,Required for compliance and service continuity.,BUD-OP-637,2026-03-31,Manager,0,Approved,No,
+PR-2026-0075,Karim Hassan,Marketing,Consulting,348957,Future Hardware Co.,VEN-5754,,BUD-MA-480,2026-04-13,Procurement Committee,2,Submitted,Yes,Missing business justification; Insufficient quotations
+PR-2026-0076,Youssef Ali,Finance,Training,195957,Mena Consulting Group,VEN-8763,Needed to replace outdated equipment.,BUD-FI-438,2026-02-07,Procurement Committee,2,Returned,Yes,Insufficient quotations
+PR-2026-0077,Omar Samir,Finance,Cloud Services,12909,Nile Office Supplies,VEN-2551,,BUD-FI-196,2026-02-13,Manager,1,In Review,Yes,Missing business justification
+PR-2026-0078,Omar Samir,HR,Consulting,190860,,,Needed to replace outdated equipment.,,2026-05-22,Procurement Committee,3,Approved,Yes,Missing budget code; Preferred vendor not provided
+PR-2026-0079,Mariam Adel,Finance,Office Supplies,47319,Future Hardware Co.,VEN-4546,Required to support approved project delivery.,BUD-FI-307,2026-03-13,Department Head,2,Submitted,Yes,Insufficient quotations
+PR-2026-0080,Omar Samir,Marketing,Maintenance,300236,Mena Consulting Group,VEN-8756,,BUD-MA-890,2026-03-04,Procurement Committee,4,Submitted,Yes,Missing business justification
