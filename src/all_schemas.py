@@ -1,14 +1,24 @@
 
-PROCUREMENT_ASSISTANT_RESPONSE_SCHEMA={
+PROCUREMENT_ASSISTANT_RESPONSE_SCHEMA = {
     "type": "object",
     "properties": {
         "answer": {"type": "string"},
         "source_documents": {"type": "array", "items": {"type": "string"}},
         "missing_information": {"type": "array", "items": {"type": "string"}},
         "recommended_next_action": {"type": "string"},
-        "risk_level": {"type": "string", "enum": ["Low", "Medium", "High"]},
+        "risk_level": {
+            "type": ["string", "null"],
+            "enum": ["Low", "Medium", "High", None],
+        },
     },
-    "required": ["answer", "source_documents", "recommended_next_action"],
+    "required": [
+        "answer",
+        "source_documents",
+        "missing_information",
+        "recommended_next_action",
+        "risk_level",
+    ],
+    "additionalProperties": False,
 }
 
 PURCHASE_REQUEST_VALIDATION_SCHEMA = {
@@ -25,6 +35,9 @@ PURCHASE_REQUEST_VALIDATION_SCHEMA = {
         "pr_id",
         "is_complete",
         "required_approval_level",
+        "missing_fields",
+        "policy_violations",
         "recommended_action",
     ],
+    "additionalProperties": False,
 }

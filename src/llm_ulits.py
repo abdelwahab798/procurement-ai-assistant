@@ -1,33 +1,21 @@
-
 import os
 import json
 from dotenv import load_dotenv
+from ploicy_role import get_open_ai_client
 
 load_dotenv()
 
 AZURE_OPENAI_ENDPOINT = os.environ["AZURE_OPENAI_ENDPOINT"]
 AZURE_OPENAI_API_KEY = os.environ["AZURE_OPENAI_API_KEY"]
-CHAT_DEPLOYMENT = os.environ["AZURE_OPENAI_CHAT_DEPLOYMENT"]
+CHAT_DEPLOYMENT=os.environ["AZURE_OPENAI_CHAT_DEPLOYMENT"]
 
 
-def _get_client():
-    from openai import OpenAI
-    return OpenAI(base_url=AZURE_OPENAI_ENDPOINT, api_key=AZURE_OPENAI_API_KEY)
 
 
-def call_llm_with_schema(
-    system_prompt: str,
-    user_prompt: str,
-    schema: dict,
-    schema_name: str,
-    max_completion_tokens: int = 1500,
+
+def call_llm_with_schema(system_prompt: str,user_prompt: str,schema: dict,schema_name: str,max_completion_tokens: int = 50000,strict: bool = True
 ) -> dict:
-    """
-    يستدعي gpt-5-mini، يجبره يرجع JSON متوافق مع schema محدد، ويرجعه كـ dict.
-    max_completion_tokens كبير نسبيًا لأن gpt-5-mini بياخد جزء منه في reasoning
-    قبل ما يطلع الرد النهائي (لاحظنا ده وإحنا بنختبر الاتصال الأول).
-    """
-    client = _get_client()
+    client=get_open_ai_client()
 
     response = client.chat.completions.create(
         model=CHAT_DEPLOYMENT,
@@ -41,16 +29,12 @@ def call_llm_with_schema(
             "json_schema": {
                 "name": schema_name,
                 "schema": schema,
-                "strict": False,
+                "strict": strict,
             },
         },
     )
 
     content = response.choices[0].message.content
     if not content:
-        raise ValueError(
-            "الموديل رجع رد فاضي (ممكن يكون استهلك كل الـ tokens في reasoning) - "
-            "جرب تزود max_completion_tokens."
-        )
-
+        raise ValueError("LLM returned empty content.")
     return json.loads(content)
