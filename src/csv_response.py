@@ -10,6 +10,13 @@ _df_cache = None
 # load data
 def load_pr_data(csv_path: str = CSV_PATH) -> pd.DataFrame:
     df = pd.read_csv(csv_path)
+    df.drop(columns=["Notes"],inplace=True)
+    df.columns =[c.strip() for c in df.columns]
+    _df_cache=df
+    return df
+
+def load_pr_data_sum(csv_path: str = CSV_PATH) -> pd.DataFrame:
+    df = pd.read_csv(csv_path)
     df.columns =[c.strip() for c in df.columns]
     _df_cache=df
     return df
@@ -45,7 +52,6 @@ def get_pr_by_id_requester(pr_id: str,requester_df:pd.DataFrame) -> dict | None:
 #-----------------------------
 def get_pr_by_id(pr_id: str) -> dict | None:
     df = load_pr_data()
-    #pr_id="PR-2026-"+pr_id
     match = df[df["PR_ID"].astype(str).str.strip().str.upper() == pr_id]
     if match.empty:
         return {"error":f"there now pr with this value: {pr_id}"}
@@ -57,6 +63,16 @@ def get_all_pr_codes():
     df=load_pr_data()
     return sorted(df["PR_ID"].dropna().unique().tolist())
 
+def summarize():
+    df=load_pr_data_sum()
+    records=df.to_dict(orient="records")
+    procurement_record={
+        "Total Reqeusts":len(df),
+        "Missing Info": int((df["Missing_Info_Flag"]=="Yes").sum()),
+        "Status":df["Status"].value_counts().to_dict(),
+        "Notes":df[df["Missing_Info_Flag"] == "Yes"]["Notes"].value_counts().to_dict()}
+    
+    return {"Records":records,"precomputed_stats":procurement_record}
 
 #       message will send to LLM
 #-----------------------------------------
@@ -71,10 +87,6 @@ def format_pr_for_llm(pr_data: dict) -> str:
 
 
 if __name__ == "__main__":
-    Name=input("please enter your name: ")
-    pr_id=input("please enter your PR: ")
-    df=get_requester_name(Name)
-    result=get_pr_by_id(pr_id)
-    r=format_pr_for_llm(result)
-    print(r)
+    p=summarize()
+    print(p["precomputed_stats"])
     

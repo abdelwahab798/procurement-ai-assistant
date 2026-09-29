@@ -1,4 +1,3 @@
-
 PROCUREMENT_ASSISTANT_RESPONSE_SCHEMA = {
     "type": "object",
     "properties": {
@@ -8,7 +7,7 @@ PROCUREMENT_ASSISTANT_RESPONSE_SCHEMA = {
         "recommended_next_action": {"type": "string"},
         "risk_level": {
             "type": ["string", "null"],
-            "enum": ["Low", "Medium", "High", None],
+            "enum": ["Low", "Medium", "High", "null"], 
         },
     },
     "required": [
@@ -39,5 +38,5 @@ PURCHASE_REQUEST_VALIDATION_SCHEMA = {
         "policy_violations",
         "recommended_action",
     ],
-    "additionalProperties": False,
+    "additionalProperties": False,  
 }
