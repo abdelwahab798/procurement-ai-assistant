@@ -70,7 +70,12 @@ def summarize():
         "Total Reqeusts":len(df),
         "Missing Info": int((df["Missing_Info_Flag"]=="Yes").sum()),
         "Status":df["Status"].value_counts().to_dict(),
-        "Notes":df[df["Missing_Info_Flag"] == "Yes"]["Notes"].value_counts().to_dict()}
+        "Business_Justification":df["Business_Justification"].value_counts(dropna=False).to_dict(),
+        "Department":df["Department"].value_counts().to_dict(),
+        "Amount":df["Amount_AED"].describe().to_dict(),
+        "Suppliers":df["Supplier_Selected"].value_counts(dropna=False).to_dict(),
+        "Notes":df[df["Missing_Info_Flag"] == "Yes"]["Notes"].value_counts().head().to_dict()
+        }
     
     return {"Records":records,"precomputed_stats":procurement_record}
 

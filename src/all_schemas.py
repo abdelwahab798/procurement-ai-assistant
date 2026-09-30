@@ -40,3 +40,65 @@ PURCHASE_REQUEST_VALIDATION_SCHEMA = {
     ],
     "additionalProperties": False,  
 }
+
+
+OFFICER_SUMMARY_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "headline": {
+            "type": "string"
+        },
+        "total_requests": {
+            "type": "integer"
+        },
+        "missing_info_count": {
+            "type": "integer"
+        },
+        "status_breakdown": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "status": {"type": "string"},
+                    "count": {"type": "integer"}
+                },
+                "required": ["status", "count"],
+                "additionalProperties": False
+            }
+        },
+        "top_issues": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "issue": {"type": "string"},
+                    "count": {"type": "integer"}
+                },
+                "required": ["issue", "count"],
+                "additionalProperties": False
+            }
+        },
+        "key_insights": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "recommended_actions": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        }
+    },
+    "required": [
+        "headline",
+        "total_requests",
+        "missing_info_count",
+        "status_breakdown",
+        "top_issues",
+        "key_insights",
+        "recommended_actions"
+    ],
+    "additionalProperties": False
+}

@@ -1,8 +1,8 @@
 from ploicy_role import get_open_ai_client,search_ploicy_user,format_chunks_for_llm
 from llm_ulits import call_llm_with_schema
-from all_schemas import PROCUREMENT_ASSISTANT_RESPONSE_SCHEMA,PURCHASE_REQUEST_VALIDATION_SCHEMA
-from csv_response import get_pr_by_id,format_pr_for_llm
-from system_prmpts import ASK_POLICY_SYSTEM_PROMPT,VALIDATE_PR_SYSTEM_PROMPT
+from all_schemas import PROCUREMENT_ASSISTANT_RESPONSE_SCHEMA,PURCHASE_REQUEST_VALIDATION_SCHEMA,OFFICER_SUMMARY_SCHEMA
+from csv_response import get_pr_by_id,format_pr_for_llm,summarize
+from system_prmpts import ASK_POLICY_SYSTEM_PROMPT,VALIDATE_PR_SYSTEM_PROMPT,OFFICER_SUMMARY_PROMOPT
 
 
 
@@ -30,13 +30,21 @@ def request_validation(role:str,query:str,pr_id:str):
     result=call_llm_with_schema(system_prompt=VALIDATE_PR_SYSTEM_PROMPT,user_prompt=user_prompt,schema=PURCHASE_REQUEST_VALIDATION_SCHEMA,schema_name="PURCHASE_REQUEST_VALIDATION",max_completion_tokens=128000)
     return result
 
+def summarize_for_officer(role:str,query:str):
+    summary=summarize()
+    precomputed_stats=summary["precomputed_stats"]
+    chunks=search_ploicy_user(role=role,query=query,topk=5)
+    context=format_chunks_for_llm(chunks)
+    user_prompt= f" precomputed_stats: {precomputed_stats}, user question: {query} , context: {context}"
+
+    result=call_llm_with_schema(system_prompt=OFFICER_SUMMARY_PROMOPT,user_prompt=user_prompt,schema=OFFICER_SUMMARY_SCHEMA,schema_name="OFFICER_SUMMARY_PROMOPT",max_completion_tokens=128000)
+    return result
+
+
 if __name__=="__main__":
     question=input("please enter your question: ")
     role=input("please enter your role: ")
-    pr_id=input("please enter your pr_id: ")
-
-
-    result=request_validation(role=role,query=question,pr_id=pr_id)
+    result=summarize_for_officer(role=role,query=question)
     print(result)
 
 
