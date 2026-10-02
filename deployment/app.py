@@ -265,7 +265,7 @@ with tab_policy:
 
                     risk = result.get("risk_level")
                     if risk:
-                        risk_color = {"Low": "🟢", "Medium": "🟡", "High": "🔴"}.get(risk, "⚪")
+                        risk_color = {"Low": "🟢", "Medium": "🟡", "High": "🔴"}.get("No risk", "⚪")
                         st.markdown(f"**Risk Level:** {risk_color} {risk}")
 
                     sources = result.get("source_documents") or []

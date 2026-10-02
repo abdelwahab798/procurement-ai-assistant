@@ -7,7 +7,7 @@ PROCUREMENT_ASSISTANT_RESPONSE_SCHEMA = {
         "recommended_next_action": {"type": "string"},
         "risk_level": {
             "type": ["string", "null"],
-            "enum": ["Low", "Medium", "High", "null"], 
+            "enum": ["Low", "Medium", "High", "No risk"], 
         },
     },
     "required": [
