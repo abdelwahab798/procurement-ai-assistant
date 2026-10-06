@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+/* Change Streamlit Radio Button Red Color to Green */
+div[data-testid="stRadio"] div[role="radiogroup"] label div[aria-checked="true"] {
+    background-color: var(--accent-green) !important;
+    border-color: var(--accent-green) !important;
+}
+div[data-testid="stRadio"] div[role="radiogroup"] label div[aria-checked="true"] > div {
+    background-color: var(--accent-green) !important;
+}
+div[data-baseweb="radio"] div[aria-checked="true"] {
+    background-color: var(--accent-green) !important;
+    border-color: var(--accent-green) !important;
+}
+------------------------------
+
+
+
+
+/* Hide Red Highlight Bar Under Active Tab */
+div[data-baseweb="tab-highlight"] {
+    background-color: var(--accent-green) !important;
+}
+div[data-baseweb="tab-border"] {
+    background-color: transparent !important;
+}
