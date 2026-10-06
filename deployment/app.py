@@ -14,8 +14,8 @@ if str(src_path) not in sys.path:
     sys.path.append(str(src_path))
 
 import streamlit as st
-from Req_QA_rag import rqeuster_ask_ploicy, request_validation
-from Office_QA_rag import officer_ask_ploicy, summarize_for_officer
+from Req_QA_rag import rqeuster_ask_ploicy, request_validation_reqeuster
+from Office_QA_rag import officer_ask_ploicy, summarize_for_officer,request_validation_officer
 from src.csv_response import (
     get_known_requesters,
     get_requester_name,
@@ -274,7 +274,7 @@ st.markdown(
             margin-top: 1rem;
             color: #E2E8F0;
             line-height: 1.6;
-            white-space: pre-wrap;
+            
         }}
 
         /* Badges & Metrics */
@@ -582,7 +582,10 @@ with tab_requests:
                     with st.status(f"Validating {pr_code}...", expanded=True) as status:
                         st.write("Looking up the request...")
                         try:
-                            result = request_validation(role=role, query=query_input, pr_id=pr_code)
+                            if role == "officer":
+                                result = request_validation_officer(role=role, query=query_input, pr_id=pr_code)
+                            else:
+                                result = request_validation_reqeuster(role=role, query=query_input, pr_id=pr_code)
                             st.write("Checking against procurement policy...")
                             time.sleep(0.2)
                             status.update(label="Validation complete", state="complete", expanded=False)

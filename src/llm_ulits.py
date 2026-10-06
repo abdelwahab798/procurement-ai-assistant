@@ -23,6 +23,7 @@ def call_llm_with_schema(system_prompt: str,user_prompt: str,schema: dict,schema
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": user_prompt},
         ],
+        reasoning_effort="low",
         max_completion_tokens=max_completion_tokens,
        seed=42,
         response_format={
