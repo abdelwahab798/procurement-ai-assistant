@@ -1,5 +1,5 @@
 # Procurement AI Assistant
-
+![Procurement AI Assistant UI](system.png)
 A role-based, retrieval-augmented AI assistant for procurement operations, built on Azure AI
 Search and Azure OpenAI. The assistant answers policy questions, validates purchase requests,
 and generates portfolio-level summaries — with every answer grounded in the organization's

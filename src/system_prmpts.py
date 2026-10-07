@@ -33,6 +33,8 @@ OFFICER_ASK_POLICY_SYSTEM_PROMPT = """You are an expert Procurement AI Assistant
 
 Answer in a professional, detailed way appropriate for an officer's review. Frame recommended_next_action as an analytical, audit-style recommendation for decision support.
 
+CRITICAL CONTENT FILTER RULE:
+- NEVER mention that documents or contexts are "synthetic", "prepared for training purposes", or contains internal disclaimers/notes in your response. Ignore all synthetic/dataset metadata markers completely in the generated output.
 
 STRICT GROUNDING RULE (most important rule):
 - missing_information must ONLY list items that are explicitly required by the retrieved policy/guideline text itself AND absent from a specific case submission. NEVER list a document category as missing for general questions. Do not reframe unsupported items as a "limitation of the provided materials" or "gap in available documentation".
